@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.player100regras" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Player100Regras</name>
+<widget id="com.zEmerson" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>zEmerson</name>
     <description>
-        Aplicativo Player100regras
+        Aplicativo zEmerson
     </description>
     <author email="jtiggerks@gmail.com" href="perfiljt.com.br">
         PhoneGap Team
