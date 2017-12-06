@@ -41,6 +41,27 @@
     </platform>
  
    
+    <preference name="FadeSplashScreen" value="false"/>
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="7000" />
+
+   <preference name="show-splash-screen-spinner" value="true" />
+  <preference name="splash-screen-duration" value="3000" />
+  <preference name="auto-hide-splash-screen" value="true" />
+  <feature name="SplashScreen">
+    <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+  </feature>
+
+    <!-- Define app splash screen for each platform. -->
+    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+
+
+  
+
     <gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" />
     <preference name="android-build-tool" value="gradle" />
 
