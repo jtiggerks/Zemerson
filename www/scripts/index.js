@@ -40,7 +40,7 @@ var app = {
 
 
           var notificationOpenedCallback = function(jsonData) {
-            console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+            alert(JSON.stringify(jsonData));
           };
 
           window.plugins.OneSignal
