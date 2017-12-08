@@ -44,7 +44,7 @@ var app = {
           };
 
           window.plugins.OneSignal
-            .startInit("44136ffc-5cc7-41c1-89c2-1c61e85d3a25")
+            .startInit("5ceca4b1-0b62-4faf-82eb-6c4bd2f6166f")
             .handleNotificationOpened(notificationOpenedCallback)
             .endInit();
 
