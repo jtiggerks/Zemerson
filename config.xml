@@ -1,87 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.zEmerson" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget xmlns="http://www.w3.org/ns/widgets" 
+	xmlns:gap="http://phonegap.com/ns/1.0"
+	id="com.zEmerson" 
+	versionCode = "10"
+    version = "1.0.0">
     <name>zEmerson</name>
     <description>
         Aplicativo zEmerson
     </description>
-    <author email="jtiggerks@gmail.com" href="perfiljt.com.br">
-        PhoneGap Team
-    </author>
-    <content src="index.html" />
-
- 
-    <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="15" />
-    <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#1bb394" />
-    <preference name="StatusBarStyle" value="blacktranslucent" />
-    <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.3" />
-    <preference name="auto-hide-splash-screen"    value="true" />
-
-   
-    <preference name="FadeSplashScreen" value="false"/>
-    <preference name="ShowSplashScreenSpinner" value="false" />
-    <preference name="SplashScreen" value="splash" />
-    <preference name="SplashScreenDelay" value="7000" />
- 
-    <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
- 
-    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-    <platform name="android">
-        <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
-        <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
-        <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
-        <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
-        <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
-        <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
-        <splash density="land-ldpi" src="www/res/screen/android/drawable-land-ldpi-screen.png" />
-        <splash density="land-mdpi" src="www/res/screen/android/drawable-land-mdpi-screen.png" />
-        <splash density="land-hdpi" src="www/res/screen/android/drawable-land-hdpi-screen.png" />
-        <splash density="land-xhdpi" src="www/res/screen/android/drawable-land-xhdpi-screen.png" />
-        <splash density="land-xxhdpi" src="www/res/screen/android/drawable-land-xxhdpi-screen.png" />
-        <splash density="land-xxxhdpi" src="www/res/screen/android/drawable-land-xxxhdpi-screen.png" />
-        <splash density="port-ldpi" src="www/res/screen/android/drawable-port-ldpi-screen.png" />
-        <splash density="port-mdpi" src="www/res/screen/android/drawable-port-mdpi-screen.png" />
-        <splash density="port-hdpi" src="www/res/screen/android/drawable-port-hdpi-screen.png" />
-        <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
-        <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
-        <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
-    </platform>
- 
-    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
-   <preference name="show-splash-screen-spinner" value="true" />
-  <preference name="splash-screen-duration" value="3000" />
-  <preference name="auto-hide-splash-screen" value="true" />
-  <feature name="SplashScreen">
-    <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-  </feature>
-
-    <!-- Define app splash screen for each platform. -->
-    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
-    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
-    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
-    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
-
-
-  
-
-    <gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" />
-    <preference name="android-build-tool" value="gradle" />
-
-    <access origin="*" />
-    <access origin="*.onesignal.com" />     
-
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
-</widget>
+ </widget>
