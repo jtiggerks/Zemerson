@@ -1,21 +1,35 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.zEmerson" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Player100Regras</name>
+    <name>zEmerson</name>
     <description>
-        Aplicativo Teste
+        Aplicativo zEmerson
     </description>
     <author email="jtiggerks@gmail.com" href="perfiljt.com.br">
-       Teste
+        PhoneGap Team
     </author>
-    <content src="index.html" />
+    <content src="http://www.zemerson.com.br" />
+
+    <preference name="phonegap-version" value="cli-6.5.0" />
+
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="15" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#1bb394" />
     <preference name="StatusBarStyle" value="blacktranslucent" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.3" />
+    <preference name="auto-hide-splash-screen"    value="true" />
 
+   
+    <preference name="FadeSplashScreen" value="false"/>
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="7000" />
  
+    <plugin name="cordova-plugin-crosswalk-webview" />
+    <preference name="xwalkVersion" value="org.xwalk:xwalk_core_library_beta:14+" />
+
+    <preference name="AllowBackForwardNavigationGestures" value="true" />
+
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
  
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
@@ -40,12 +54,30 @@
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
     </platform>
  
-   
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+   <preference name="show-splash-screen-spinner" value="true" />
+  <preference name="splash-screen-duration" value="3000" />
+  <preference name="auto-hide-splash-screen" value="true" />
+  <feature name="SplashScreen">
+    <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+  </feature>
+
+    <!-- Define app splash screen for each platform. -->
+    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+
+
+  
+
     <gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" />
     <preference name="android-build-tool" value="gradle" />
 
     <access origin="*" />
     <access origin="*.onesignal.com" />    
+    <access origin="http://www.zemerson.com.br" /> 
+
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
