@@ -62,7 +62,7 @@
 
 
 
-    <plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" source="npm"  />
+    <plugin name="cordova-plugin-device" source="npm" />
     
     <!-- Define app splash screen for each platform. -->
     <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
