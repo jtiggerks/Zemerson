@@ -20,6 +20,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
+          alert(22);
         this.bindEvents();
         
     },
