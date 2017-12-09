@@ -39,7 +39,9 @@ var app = {
         app.receivedEvent('deviceready');
 
 
-         window.plugins.uniqueDeviceID.get(success, fail);
+                  
+            alert(11);
+            alert(device.uuid);
 
           var notificationOpenedCallback = function(jsonData) {
             alert(JSON.stringify(jsonData));
