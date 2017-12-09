@@ -25,9 +25,7 @@
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="7000" />
  
-    <plugin name="cordova-plugin-crosswalk-webview" />
-    <preference name="xwalkVersion" value="org.xwalk:xwalk_core_library_beta:14+" />
-
+   
     <preference name="AllowBackForwardNavigationGestures" value="true" />
 
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
