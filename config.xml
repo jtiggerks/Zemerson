@@ -9,8 +9,7 @@
     </author>
     <content src="index.html" />
 
-    <preference name="phonegap-version" value="cli-6.5.0" />
-
+ 
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="15" />
     <preference name="StatusBarOverlaysWebView" value="false" />
@@ -25,11 +24,6 @@
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="7000" />
  
-    <plugin name="cordova-plugin-crosswalk-webview" />
-    <preference name="xwalkVersion" value="org.xwalk:xwalk_core_library_beta:14+" />
-
-    <preference name="AllowBackForwardNavigationGestures" value="true" />
-
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
  
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
@@ -75,8 +69,7 @@
     <preference name="android-build-tool" value="gradle" />
 
     <access origin="*" />
-    <access origin="*.onesignal.com" />    
-    <access origin="http://www.zemerson.com.br" /> 
+    <access origin="*.onesignal.com" />     
 
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
