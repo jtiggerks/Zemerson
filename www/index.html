@@ -21,16 +21,27 @@
 
     <script type="text/javascript" charset="utf-8">
 
-        function lodad()
-        {
 
-      $( "#urrl" ).load( "http://www.zemerson.com.br" );
- 
+   
+    function sem_Conexao(e){
+    $("<div title='Sem conexão'></div>").dialog({
+       open: function(event, ui) { $(this).html('<span style="text-align:"center;">Conecte-se para utilizar esta função.</span>'); $(".ui-dialog-titlebar-close", ui.dialog | ui).hide(); },
+      show: { effect: "fade", duration: 300 },
+      buttons: [
+        {
+          text: "Fechar",
+          click: function() {
+           navigator.app.exitApp();    
+          }
         }
+      ]
+    }); 
+    }
+ 
     </script>
 
   </head>
-  <body onload="lodad()">
+  <body>
   <style>
    body{margin: 0; overflow: hidden;}
 
@@ -55,7 +66,8 @@ iframe {
     position: absolute;
 }
   </style>
-  <div class="wrapper" id="urrl"> 
+  <div class="wrapper">
+         <iframe src="http://www.zemerson.com.br" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="width:100%; height:100%;" allowfullscreen frameborder="0">
   </div>
 
 
