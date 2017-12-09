@@ -13,8 +13,7 @@
     </description>
 
         <content src="index.html" />
- </widget>
-
+ 
 
 
     <access origin="*" />
