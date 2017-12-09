@@ -28,7 +28,6 @@
    
     <preference name="AllowBackForwardNavigationGestures" value="true" />
 
-    <gap:plugin name="cordova-plugin-uniquedeviceid" source="npm" />
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
  
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
@@ -53,14 +52,19 @@
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
     </platform>
  
-    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
-   <preference name="show-splash-screen-spinner" value="true" />
-  <preference name="splash-screen-duration" value="3000" />
-  <preference name="auto-hide-splash-screen" value="true" />
-  <feature name="SplashScreen">
-    <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-  </feature>
+	<plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+	<preference name="show-splash-screen-spinner" value="true" />
+	<preference name="splash-screen-duration" value="3000" />
+	<preference name="auto-hide-splash-screen" value="true" />
+	<feature name="SplashScreen">
+	<param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+	</feature>
 
+
+
+    <gap:plugin name="cordova-plugin-uniquedeviceid" source="npm" />
+    
+    
     <!-- Define app splash screen for each platform. -->
     <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />

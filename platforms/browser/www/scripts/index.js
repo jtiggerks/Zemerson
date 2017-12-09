@@ -29,8 +29,6 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        window.plugins.uniqueDeviceID.get(success, fail);
- 
     },
     // deviceready Event Handler
     //
@@ -40,7 +38,17 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
- 
+
+         window.plugins.uniqueDeviceID.get(success, fail);
+
+          var notificationOpenedCallback = function(jsonData) {
+            alert(JSON.stringify(jsonData));
+          };
+
+          window.plugins.OneSignal
+            .startInit("5ceca4b1-0b62-4faf-82eb-6c4bd2f6166f")
+            .handleNotificationOpened(notificationOpenedCallback)
+            .endInit();
 
 
           },
