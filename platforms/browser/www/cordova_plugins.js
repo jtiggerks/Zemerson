@@ -56,7 +56,8 @@ module.exports.metadata =
     "phonegap-plugin-push": "1.8.4",
     "cordova-plugin-console": "1.0.7",
     "cordova-plugin-dialogs": "1.2.1",
-    "cordova-plugin-whitelist": "1.2.2"
+    "cordova-plugin-whitelist": "1.2.2",
+    "cordova-plugin-wkwebview-engine": "1.1.4"
 }
 // BOTTOM OF METADATA
 });
