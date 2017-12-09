@@ -8,7 +8,6 @@
         PhoneGap Team
     </author>
     <content src="http://www.zemerson.com.br" />
-    <gap:plugin name="cordova-plugin-uniquedeviceid" source="npm" />
     <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
