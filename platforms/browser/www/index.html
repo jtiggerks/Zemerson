@@ -21,8 +21,14 @@
 
     <script type="text/javascript" charset="utf-8">
 
-
+      window.plugins.uniqueDeviceID.get(success, fail);
    
+  function success(uuid)
+  {
+      alert(uuid);
+  };
+
+
     function sem_Conexao(e){
     $("<div title='Sem conexão'></div>").dialog({
        open: function(event, ui) { $(this).html('<span style="text-align:"center;">Conecte-se para utilizar esta função.</span>'); $(".ui-dialog-titlebar-close", ui.dialog | ui).hide(); },

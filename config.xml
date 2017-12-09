@@ -7,7 +7,7 @@
     <author email="jtiggerks@gmail.com" href="perfiljt.com.br">
         PhoneGap Team
     </author>
-    <content src="http://www.zemerson.com.br" />
+    <content src="index.html" />
 
     <preference name="phonegap-version" value="cli-6.5.0" />
 
@@ -19,13 +19,15 @@
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.3" />
     <preference name="auto-hide-splash-screen"    value="true" />
 
+     <gap:plugin name="cordova-plugin-uniquedeviceid" source="npm" />
    
     <preference name="FadeSplashScreen" value="false"/>
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="7000" />
  
- 
+    <plugin name="cordova-plugin-crosswalk-webview" />
+    <preference name="xwalkVersion" value="org.xwalk:xwalk_core_library_beta:14+" />
 
     <preference name="AllowBackForwardNavigationGestures" value="true" />
 

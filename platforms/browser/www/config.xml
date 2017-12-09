@@ -8,6 +8,7 @@
         PhoneGap Team
     </author>
     <content src="index.html" />
+    <gap:plugin name="cordova-plugin-uniquedeviceid" source="npm" />
     <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
@@ -32,6 +33,7 @@
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="7000" />
+    <preference name="xwalkVersion" value="org.xwalk:xwalk_core_library_beta:14+" />
     <preference name="AllowBackForwardNavigationGestures" value="true" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="splash-screen-duration" value="3000" />
