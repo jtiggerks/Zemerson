@@ -57,7 +57,8 @@ module.exports.metadata =
     "cordova-plugin-console": "1.0.7",
     "cordova-plugin-dialogs": "1.2.1",
     "cordova-plugin-whitelist": "1.2.2",
-    "cordova-plugin-wkwebview-engine": "1.1.4"
+    "cordova-plugin-wkwebview-engine": "1.1.4",
+    "cordova-plugin-crosswalk-webview": "2.3.0"
 }
 // BOTTOM OF METADATA
 });

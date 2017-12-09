@@ -25,6 +25,9 @@
         },
         "cordova-plugin-wkwebview-engine": {
             "PACKAGE_NAME": "com.zEmerson"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.zEmerson"
         }
     },
     "dependent_plugins": {}

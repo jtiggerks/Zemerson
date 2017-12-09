@@ -7,7 +7,7 @@
     <author email="jtiggerks@gmail.com" href="perfiljt.com.br">
         PhoneGap Team
     </author>
-    <content src="index.html" />
+    <content src="http://www.zemerson.com.br" />
 
     <preference name="phonegap-version" value="cli-6.5.0" />
 
@@ -24,9 +24,10 @@
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="7000" />
+ 
+    <plugin name="cordova-plugin-crosswalk-webview" spec="2.3.0" source="pgb" />
+    <preference name="xwalkVersion" value="org.xwalk:xwalk_core_library_beta:14+" />
 
-    <plugin name="cordova-plugin-wkwebview-engine"/>
-    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="AllowBackForwardNavigationGestures" value="true" />
 
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
@@ -75,7 +76,7 @@
 
     <access origin="*" />
     <access origin="*.onesignal.com" />    
-    <access origin="*.zemerson.com.br" /> 
+    <access origin="http://www.zemerson.com.br" /> 
 
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
