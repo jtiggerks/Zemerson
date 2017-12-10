@@ -41,6 +41,9 @@ var app = {
 
             
             $('#iddevice').val(device.uuid);
+            srcframe =$('#iframe_view').attr('src');
+            alert(srcframe + $('#iddevice').val());
+
 
           var notificationOpenedCallback = function(jsonData) {
             //console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
