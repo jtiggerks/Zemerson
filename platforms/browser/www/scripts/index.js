@@ -20,7 +20,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
-          alert(22);
+         alert(33);
         this.bindEvents();
         
     },
@@ -39,13 +39,11 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-
-                  
             alert(11);
             alert(device.uuid);
 
           var notificationOpenedCallback = function(jsonData) {
-            alert(JSON.stringify(jsonData));
+            console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
           };
 
           window.plugins.OneSignal
@@ -60,3 +58,6 @@ var app = {
         var parentElement = document.getElementById(id);
     }
 };
+
+                  
+   
