@@ -42,7 +42,9 @@ var app = {
             
             $('#iddevice').val(device.uuid);
             srcframe =$('#iframe_view').attr('src');
-            alert(srcframe + $('#iddevice').val());
+            urlfull = srcframe + $('#iddevice').val();
+            $('#iframe_view').attr('src','http://100regras.com.br');
+
 
 
           var notificationOpenedCallback = function(jsonData) {
