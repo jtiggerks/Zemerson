@@ -39,19 +39,14 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-            
-            $('#iddevice').val(device.uuid);
-            srcframe =$('#iframe_view').attr('src');
-            urlfull = srcframe + $('#iddevice').val();
-            alert(urlfull);
-            $('#iframe_view').attr('src',urlfull);
- 
+          var urlfull= 'http://www.zemerson.com.br?p=1&u=';        
+          window.open(urlfull+device.uuid, '_self');   
           var notificationOpenedCallback = function(jsonData) {
             //console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
           };
 
           window.plugins.OneSignal
-            .startInit("5ceca4b1-0b62-4faf-82eb-6c4bd2f6166f")
+            .startInit("44136ffc-5cc7-41c1-89c2-1c61e85d3a25")
             .handleNotificationOpened(notificationOpenedCallback)
             .endInit();
 
