@@ -20,7 +20,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
-         alert(33);
+  
         this.bindEvents();
         
     },
@@ -39,8 +39,8 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-            alert(11);
-            alert(device.uuid);
+            
+            $('#iddevice').val(device.uuid);
 
           var notificationOpenedCallback = function(jsonData) {
             //console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
