@@ -43,7 +43,7 @@ var app = {
             alert(device.uuid);
 
           var notificationOpenedCallback = function(jsonData) {
-            console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+            //console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
           };
 
           window.plugins.OneSignal

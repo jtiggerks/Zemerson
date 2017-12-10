@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.zEmerson" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <access origin="http://www.zemerson.com.br" />
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
@@ -10,7 +11,7 @@
     <author email="jtiggerks@gmail.com" href="perfiljt.com.br">
         PhoneGap Team
     </author>
-    <content src="http://www.zemerson.com.br" />
+    <content src="index.html" />
     <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
@@ -18,7 +19,6 @@
     <gap:plugin name="onesignal-cordova-plugin" source="npm" spec="^2.1.1" />
     <access origin="*" />
     <access origin="*.onesignal.com" />
-    <access origin="http://www.zemerson.com.br" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />

@@ -29,7 +29,9 @@
     <preference name="AllowBackForwardNavigationGestures" value="true" />
 
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
- 
+ 	
+ 	<plugin name="cordova-plugin-device" spec="https://github.com/apache/cordova-plugin-device.git#1.0.0" />
+ 	
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
@@ -67,7 +69,8 @@
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
 
 
-  
+  	
+
 
     <gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" />
     <preference name="android-build-tool" value="gradle" />
