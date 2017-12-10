@@ -7,7 +7,7 @@
     <author email="jtiggerks@gmail.com" href="perfiljt.com.br">
         PhoneGap Team
     </author>
-    <content src="http://www.zemerson.com.br" />
+    <content src="index.html" />
 
     <preference name="phonegap-version" value="cli-6.5.0" />
 
@@ -52,18 +52,14 @@
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
     </platform>
  
-	<plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
-	<preference name="show-splash-screen-spinner" value="true" />
-	<preference name="splash-screen-duration" value="3000" />
-	<preference name="auto-hide-splash-screen" value="true" />
-	<feature name="SplashScreen">
-	<param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-	</feature>
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+   <preference name="show-splash-screen-spinner" value="true" />
+  <preference name="splash-screen-duration" value="3000" />
+  <preference name="auto-hide-splash-screen" value="true" />
+  <feature name="SplashScreen">
+    <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+  </feature>
 
-
-
-    <plugin name="cordova-plugin-device" source="npm" />
-    
     <!-- Define app splash screen for each platform. -->
     <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
@@ -77,8 +73,7 @@
     <preference name="android-build-tool" value="gradle" />
 
     <access origin="*" />
-    <access origin="*.onesignal.com" />    
-    <access origin="http://www.zemerson.com.br" /> 
+    <access origin="*.onesignal.com" />     
 
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
